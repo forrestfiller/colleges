@@ -13,6 +13,13 @@
 		B7EFD2F81D18AD3500005533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD2F61D18AD3500005533 /* Main.storyboard */; };
 		B7EFD2FA1D18AD3500005533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD2F91D18AD3500005533 /* Assets.xcassets */; };
 		B7EFD2FD1D18AD3600005533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD2FB1D18AD3600005533 /* LaunchScreen.storyboard */; };
+		B7EFD3081D18C10100005533 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFD3071D18C10100005533 /* College.swift */; };
+		B7EFD3101D18C5B500005533 /* harvard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30A1D18C5B500005533 /* harvard@2x.png */; };
+		B7EFD3111D18C5B500005533 /* michigan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30B1D18C5B500005533 /* michigan@2x.png */; };
+		B7EFD3121D18C5B500005533 /* nyu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30C1D18C5B500005533 /* nyu@2x.png */; };
+		B7EFD3131D18C5B500005533 /* ucla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30D1D18C5B500005533 /* ucla@2x.png */; };
+		B7EFD3141D18C5B500005533 /* uconn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30E1D18C5B500005533 /* uconn@2x.png */; };
+		B7EFD3151D18C5B500005533 /* wisconsin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EFD30F1D18C5B500005533 /* wisconsin@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +32,13 @@
 		B7EFD2F91D18AD3500005533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7EFD2FC1D18AD3600005533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7EFD2FE1D18AD3600005533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7EFD3071D18C10100005533 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		B7EFD30A1D18C5B500005533 /* harvard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harvard@2x.png"; sourceTree = "<group>"; };
+		B7EFD30B1D18C5B500005533 /* michigan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "michigan@2x.png"; sourceTree = "<group>"; };
+		B7EFD30C1D18C5B500005533 /* nyu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nyu@2x.png"; sourceTree = "<group>"; };
+		B7EFD30D1D18C5B500005533 /* ucla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ucla@2x.png"; sourceTree = "<group>"; };
+		B7EFD30E1D18C5B500005533 /* uconn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uconn@2x.png"; sourceTree = "<group>"; };
+		B7EFD30F1D18C5B500005533 /* wisconsin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wisconsin@2x.png"; sourceTree = "<group>"; };
 		DE5BA4A8E846445F1630398D /* Pods-colleges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-colleges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-colleges/Pods-colleges.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +84,8 @@
 		B7EFD2F11D18AD3500005533 /* colleges */ = {
 			isa = PBXGroup;
 			children = (
+				B7EFD3091D18C5B500005533 /* images */,
+				B7EFD3041D18BF7300005533 /* model */,
 				B7EFD2F21D18AD3500005533 /* AppDelegate.swift */,
 				B7EFD2F41D18AD3500005533 /* ViewController.swift */,
 				B7EFD2F61D18AD3500005533 /* Main.storyboard */,
@@ -78,6 +94,27 @@
 				B7EFD2FE1D18AD3600005533 /* Info.plist */,
 			);
 			path = colleges;
+			sourceTree = "<group>";
+		};
+		B7EFD3041D18BF7300005533 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B7EFD3071D18C10100005533 /* College.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B7EFD3091D18C5B500005533 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B7EFD30A1D18C5B500005533 /* harvard@2x.png */,
+				B7EFD30B1D18C5B500005533 /* michigan@2x.png */,
+				B7EFD30C1D18C5B500005533 /* nyu@2x.png */,
+				B7EFD30D1D18C5B500005533 /* ucla@2x.png */,
+				B7EFD30E1D18C5B500005533 /* uconn@2x.png */,
+				B7EFD30F1D18C5B500005533 /* wisconsin@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		FB20BFCADE18CF04BF7BC34D /* Frameworks */ = {
@@ -149,9 +186,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EFD3151D18C5B500005533 /* wisconsin@2x.png in Resources */,
 				B7EFD2FD1D18AD3600005533 /* LaunchScreen.storyboard in Resources */,
 				B7EFD2FA1D18AD3500005533 /* Assets.xcassets in Resources */,
+				B7EFD3111D18C5B500005533 /* michigan@2x.png in Resources */,
+				B7EFD3131D18C5B500005533 /* ucla@2x.png in Resources */,
+				B7EFD3141D18C5B500005533 /* uconn@2x.png in Resources */,
 				B7EFD2F81D18AD3500005533 /* Main.storyboard in Resources */,
+				B7EFD3101D18C5B500005533 /* harvard@2x.png in Resources */,
+				B7EFD3121D18C5B500005533 /* nyu@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +255,7 @@
 			files = (
 				B7EFD2F51D18AD3500005533 /* ViewController.swift in Sources */,
 				B7EFD2F31D18AD3500005533 /* AppDelegate.swift in Sources */,
+				B7EFD3081D18C10100005533 /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

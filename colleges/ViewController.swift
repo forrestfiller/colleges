@@ -12,7 +12,7 @@ import Alamofire
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var collegesTable: UITableView!
-    var collegeList = Array<Dictionary<String, AnyObject>>()
+    var collegeList = Array<College>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 if let colleges = json["colleges"] as? Array<Dictionary<String, AnyObject>>{
                     print("\(colleges)")
                     
-                    for college in colleges {
+                    for collegeInfo in colleges {
+                        let college = College()
+                        college.populate(collegeInfo)
                         self.collegeList.append(college)
                     }
                     
@@ -46,18 +48,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let college = self.collegeList[indexPath.row] // this is a dictionary
+        let college = self.collegeList[indexPath.row]
         
         let cellId = "cellId"
         if let cell = tableView.dequeueReusableCellWithIdentifier(cellId) {
-            cell.textLabel?.text = college["name"] as? String
-            cell.detailTextLabel?.text = college["location"] as? String
+            cell.textLabel?.text = college.name
+            cell.detailTextLabel?.text = college.location+", "+college.mascot
+            cell.imageView?.image = UIImage(named: college.image)
             return cell
         }
         
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellId)
-        cell.textLabel?.text = college["name"] as? String
-        cell.detailTextLabel?.text = college["location"] as? String
+        cell.textLabel?.text = college.name
+        cell.detailTextLabel?.text = college.location+", "+college.mascot
+        cell.imageView?.image = UIImage(named: college.image)
         return cell
     }
 }
